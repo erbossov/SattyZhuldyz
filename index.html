@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satty Zhuldyz</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <div class="contain">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img src="./jpg/logo.svg" alt="logo" />
+          </a>
+          <div class="menu">
+            <ul class="menu__list">
+              <a href="#loto" class="menu__link">Лотереи</a>
+              <a href="#stock" class="menu__link">Акции</a>
+              <a href="#wallet" class="menu__link">Кошелек</a>
+              <a href="#myTickets" class="menu__link">Мои билеты</a>
+              <a href="#drawArchive" class="menu__link">Архив тиражей</a>
+              <a href="#ticketCheck" class="menu__link">Проверка билета</a>
+              <div class="lang-switch-circle">
+                <span class="lang-switch">KZ</span>
+              </div>
+              <div>
+                <img src="./jpg/alert.svg" alt="alert" />
+              </div>
+              <div>
+                <img src="./jpg/burger.svg" alt="burger" />
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="body__inn">
+      <div class="body_header_ospan">
+        <img src="./jpg/ospan2.png" alt="ospan" />
+      </div>
+      <div class="body__column">
+        <span class="body__title">С 15 января по 26 февраля 2023</span>
+        <span class="body__subtitle"
+          >Миллионер <br />
+          каждую неделю</span
+        >
+        <a href="#link" class="body__link">Подробнее</a>
+      </div>
+    </section>
+    <section class="body__inn_middle">
+      <div class="middle-left-block">
+        <div class="ticket_btns">
+          <div class="ticket_btn active-mid-btn" onclick="toggleTicketType(this, false)">Онлайн-билет</div>
+          <div class="ticket_btn" onclick="toggleTicketType(this, true)">Бумажный билет</div>
+        </div>
+        <div class="body__terms_action">
+          <p class="body__terms_subtitle">Условия акции:</p>
+          <p class="body__terms_text">
+            <span class="line-y"></span> Совершите покупку одним чеком любых
+            <br />
+            лотерейных билетов из списка ниже на 3 000 ₸ и более.
+          </p>
+          <p class="body__terms_text">
+            <span class="line-y"></span> Период акции: с 15 января по 26
+            февраля.
+          </p>
+          <p class="body__terms_text">
+            <span class="line-y"></span> Смотрите розыгрыши в прямом эфире
+            программы <br />
+            “TeleBingo” на 31 Канале и на YouTube канале Satty <br />
+            Zhuldyz.
+          </p>
+        </div>
+        <div class="body__lot_list">
+          <span class="body__lot_subtitle">Список лотерей на сайте sz.kz:</span>
+          <div class="flex-line mt-15">
+            <img class="body__lot_edition" src="./jpg/lot.jpg" alt="lot" />
+            <div>Тиражные лотереи</div>
+          </div>
+          <div class="body__lot_logo">
+            <img src="./jpg/teleBingo.png" alt="logo" />
+            <img src="./jpg/loto649.png" alt="logo" />
+            <img src="./jpg/loto536.png" alt="logo" />
+            <img src="./jpg/777.png" alt="logo" />
+            <img src="./jpg/keno.png" alt="logo" />
+            <img src="./jpg/keno2.png" alt="logo" />
+            <img src="./jpg/420.png" alt="logo" />
+            <img src="./jpg/820.png" alt="logo" />
+          </div>
+          <div class="flex-line show-paper-ticket mt-15" style="display: none;">
+            <img class="body__lot_edition" src="./jpg/clock.svg" alt="lot" />
+            <div>Моментальные лотереи</div>
+          </div>
+          <div class="body__lot_logo show-paper-ticket" style="display: none;">
+            <img src="./jpg/teleBingo.png" alt="logo" />
+            <img src="./jpg/loto649.png" alt="logo" />
+            <img src="./jpg/loto536.png" alt="logo" />
+            <img src="./jpg/777.png" alt="logo" />
+            <img src="./jpg/keno.png" alt="logo" />
+            <img src="./jpg/keno2.png" alt="logo" />
+            <img src="./jpg/420.png" alt="logo" />
+            <img src="./jpg/820.png" alt="logo" />
+          </div>
+        </div>
+        <div class="where-buy show-paper-ticket" style="display: none;">
+          <p class="bold fs-24 white mb-10">Где купить билет?</p>
+          <p class="white">Купить бумажные билеты лотереи вы можете в точках продаж. С картой расположения наших точек продаж можно ознакомиться на специальной странице.</p>
+          <button class="where-buy-btn">Карта точек продаж</button>
+          <img src="./jpg/mappoint.svg">
+        </div>
+      </div>
+      <div class="body__lot_ph_smphone">
+        <img src="./jpg/smart.png" alt="" />
+      </div>
+    </section>
+    <section class="third">
+      <div class="third-top-block">
+        <div class="third-left">
+          <img class="third-image" src="./jpg/ospan3.png" alt="" />
+        </div>
+        <div class="third-right">
+          <p class="third-right-title">Даты розыгрышей</p>
+          <div class="accordions">
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">22</div>
+                    <div class="date-month">января</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">29</div>
+                    <div class="date-month">января</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">5</div>
+                    <div class="date-month">февраля</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">12</div>
+                    <div class="date-month">февраля</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">17</div>
+                    <div class="date-month">февраля</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-head">
+                <div class="flex">
+                  <div class="accordion-date">
+                    <div class="date-cypher">22</div>
+                    <div class="date-month">февраля</div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="accordion-text">
+                    1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸
+                  </div>
+                </div>
+                <img class="arrow" src="./jpg/dropdown.svg" />
+              </div>
+              <div class="panel">
+                22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+                билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+                Список участников Победители
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-bottom-block">
+        <div class="third-bottom-left">
+          <span class="bold fs-28">Проверка участия в розыгрыше</span>
+          <input type="text" placeholder="Телефон" id="phone" class="phone-input">
+          <small>Информация по билетам, приобретенным онлайн, обновляется каждый день в 00:00</small>
+          <button class="check-btn">Проверить</button>
+        </div>
+        <div class="third-bottom-right">
+          <img src="./jpg/chair.png">
+        </div>
+      </div>
+    </section>
+    <section class="forth">
+      <div class="forth-inner-block">
+        <span class="bold fs-32 white">Часто задаваемые вопросы</span>
+        <div class="f-accordion">
+          <div class="f-accordion-head">
+            <div class="f-accordion-text">Как купить билеты одним чеком на сайте?</div>
+            <img src="./jpg/plus.svg">
+          </div>
+          <div class="panel">
+            22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+            билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+            Список участников Победители
+          </div>
+        </div>
+        <div class="f-accordion">
+          <div class="f-accordion-head">
+            <div class="f-accordion-text">Надо ли регистрировать купон для участия в розыгрыше?</div>
+            <img src="./jpg/plus.svg">
+          </div>
+          <div class="panel">
+            22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+            билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+            Список участников Победители
+          </div>
+        </div>
+        <div class="f-accordion">
+          <div class="f-accordion-head">
+            <div class="f-accordion-text">Если я купил билетов на сумму в несколько раз превышающую 3000 тенге, сколько купонов будут принимать участие в акции?</div>
+            <img src="./jpg/plus.svg">
+          </div>
+          <div class="panel">
+            22 1 000 000 ₸, iPhone 14 и 5 призов по 50 000 ₸ января участвуют
+            билеты, зарегистрированные с 15.01.2023 00:00 по 21.01.2023 23:59
+            Список участников Победители
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="block-attention">
+            <div class="attention-title bold">Это важно знать:</div>
+            <div class="flex-start">
+              <img src="./jpg/attention.svg">
+              <span>Для получения выигрыша обратитесь в любую точку продажи или позвоните в контакт-центр по номеру <span class="bold blue">8 800 080 52 00</span>. </span>
+            </div>
+            <div class="flex-start">
+              <img src="./jpg/attention.svg">
+              <span>Все выигрыши по акции должны быть востребованы до 31 марта. После указанной даты, выигрыши не выплачиваются.</span>
+            </div>
+          </div>
+          <div class="block-attention">
+            <div class="attention-title bold">ВНИМАНИЕ!</div>
+            <div class="flex-start">
+              <img src="./jpg/attention.svg">
+              <span>Если предъявленный для получения выигрыша фискальный чек не соответствует условиям проведения акции, выигрыш по нему не выплачивается.</span>
+            </div>
+            <div class="flex-start">
+              <img src="./jpg/attention.svg">
+              <span>Ответственность за правильность внесения номера фискального чека, а также сохранность его оригинала несет участник акции.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
